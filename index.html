@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
+		<title>Name Tombola 2.0</title>
+		<meta name="author" content="name">
+		<meta name="description" content="description here">
+		<meta name="keywords" content="keywords,here">
+		<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+		<link rel="stylesheet" href="styles.css" type="text/css">
+	</head>
+	<body>
+		<script src="localstorage.js"></script>
+		<div class="container">
+			<div class="pointerFrame" id="pointerFrame">
+				<img class="pointerArm" id="pointerArm" src="/assets/pointer_arm.png">
+				<div class="tombola" id="tombola"></div>
+			</div>
+			<input type="button" class="button start" id="start" value="START" />
+			<ul class="participantList" id="participantList"></ul>
+			<input type="text" class="nameInput" id="nameInput" placeholder="Type a name to add/remove" />
+			<input type="button" class="button addName" id="addName" value="Add/Remove" />
+		</div>
+		<script src="scripts.js"></script>
+	</body>
+</html>

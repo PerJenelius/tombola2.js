@@ -132,6 +132,16 @@ const addOrRemoveParticipant = (event) => {
 
 const addParticipant = (name) => {
     app.participants.push({ name: name, amnesty: false });
+    app.participants.sort((a, b) => {
+        const nameA = a.name.toUpperCase();
+        const nameB = b.name.toUpperCase();
+        if (nameA < nameB) { return -1 }
+        if (nameA > nameB) { return 1 }
+        return 0;
+    });
+
+    console.log('app.participants', app.participants);
+
     renderNametags();
     renderNamelist();
     saveParticipants();
